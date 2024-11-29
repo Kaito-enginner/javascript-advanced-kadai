@@ -109,6 +109,9 @@ const gameOver = id => {
     // カウントが0になったら「タイムアップ！」と表示する
     untypedfield.textContent = 'タイムアップ！';
 
+    // 正タイプ文字を非表示にする
+    typedfield.style.display = 'none';
+
     // 10ミリ秒後にダイアログを表示する
     setTimeout(() =>{
         const result = confirm(rankCheck(score));
